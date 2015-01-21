@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--コメント-->
+    <meta charset="UTF-8">
+　　　<title>KoichiTakashiro.com</title>
+     <style>
+         h1 {color: yellow;
+             margin: 0;}
+         #kon {color: red;}
+         .koko{font-size: 30px;}
+         h2 {font-size:50px;}
+         body {background-color:pink;}
+         strong{font-weight:1000;}
+
+     </style>
+     <script>
+     /* コメント */
+     //コメント　1行分だけ　CSS Javascript共通
+     window.onload = function() {
+        var x = 3 ;
+        var y = x * x ;
+        var z = y + 1 ;
+
+        var result = "好きな女性のタイプは " + z ;
+
+        alert(result) ;
+        
+        var s = document.getElementById("kon");
+
+        //alert(s);
+        s.innerHTML = "プログラミング難しい！";
+
+     };
+     var hako =function(x){
+            alert("うんこまみれ" + x)
+
+     } 
+    var kakikae =function(){
+            alert("*･゜ﾟ･*:.｡..｡.:*･'(*ﾟ▽ﾟ*)'･*:.｡. .｡.:*･゜ﾟ･\n" +
+             "*･゜ﾟ･*:.｡..｡.:*･'(*ﾟ▽ﾟ*)'･*:.｡. .｡.:*･゜ﾟ･*")
+
+    }
+
+     </script>
+
+</head>
+
+<body>
+<h1>Hello World</h1>
+<h1 id="kon">konnichiwa!</h1>
+<h2 class=“koko”>fuck you!</h2>
+    <ul>
+      <li><strong>kome</strong></li>
+      <li>meko</li>
+    </ul>
+
+    <button onClick = 'hako("おじさん");'>着火</button>
+    <button onmouseover="kakikae();">絶対に押すな</button>←本当に押すなよ。絶対にだ。
+</body>
+
+
+</html>
