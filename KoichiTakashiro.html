@@ -5,6 +5,10 @@
     <!--コメント-->
     <meta charset="UTF-8">
 　　　<title>KoichiTakashiro.com</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <!--今からCSSy読み込みまーすとかjavascript読み込みまーすの宣言してるけど宣言方法は異なる-->
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+
      <style>
          h1 {color: yellow;
              margin: 0;}
@@ -40,8 +44,8 @@
     var kakikae =function(){
             alert("*･゜ﾟ･*:.｡..｡.:*･'(*ﾟ▽ﾟ*)'･*:.｡. .｡.:*･゜ﾟ･\n" +
              "*･゜ﾟ･*:.｡..｡.:*･'(*ﾟ▽ﾟ*)'･*:.｡. .｡.:*･゜ﾟ･*")
-
-    }
+            $("#danger") . attr("class", "btn btn-warning");
+    };
 
      </script>
 
@@ -57,7 +61,32 @@
     </ul>
 
     <button onClick = 'hako("おじさん");'>着火</button>
-    <button onmouseover="kakikae();">絶対に押すな</button>←本当に押すなよ。絶対にだ。
+    <button onmouseover="kakikae();">絶対に押すな</button>←本当に押すなよ。絶対にだ。<br><br>
+
+    <!-- Standard button -->
+<button type="button" class="btn btn-default">Default</button>
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn btn-primary">Primary</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn-success">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn-info">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn-warning">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn-danger">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn btn-link">Link</button>
+
+
+
+
 </body>
 
 
