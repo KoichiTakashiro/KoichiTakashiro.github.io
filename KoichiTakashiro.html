@@ -10,12 +10,13 @@
     <script type="text/javascript" src="jquery/jquery.js"></script>
 
      <style>
-         h1 {color: yellow;
-             margin: 0;}
+         h1 {color: orange;
+             margin: 1;}
          #kon {color: red;}
-         .koko{font-size: 30px;}
+         .koko{font-size: 60px;
+                color: blue;}
          h2 {font-size:50px;}
-         body {background-color:pink;}
+         body {background-color:lightgray;}
          strong{font-weight:1000;}
 
      </style>
@@ -38,12 +39,12 @@
 
      };
      var hako =function(x){
-            alert("うんこまみれ" + x)
+            alert("愛情たっぷりの" + x)
 
      } 
     var kakikae =function(){
-            alert("*･゜ﾟ･*:.｡..｡.:*･'(*ﾟ▽ﾟ*)'･*:.｡. .｡.:*･゜ﾟ･\n" +
-             "*･゜ﾟ･*:.｡..｡.:*･'(*ﾟ▽ﾟ*)'･*:.｡. .｡.:*･゜ﾟ･*")
+            alert("*･゜ﾟ･*:.｡..｡.:*･'だめよ(*ﾟ▽ﾟ*)'･*:.｡. .｡.:*･゜ﾟ･\n" +
+             "*･゜ﾟ･*:.｡..｡.:*･'(*ﾟ▽ﾟ*)だめだめ'･*:.｡. .｡.:*･゜ﾟ･*")
             $("#danger") . attr("class", "btn btn-warning");
     };
 
@@ -54,7 +55,7 @@
 <body>
 <h1>Hello World</h1>
 <h1 id="kon">konnichiwa!</h1>
-<h2 class=“koko”>fuck you!</h2>
+<h2 class="koko">fuck you!</h2>
     <ul>
       <li><strong>kome</strong></li>
       <li>meko</li>
@@ -81,12 +82,11 @@
 <!-- Indicates a dangerous or potentially negative action -->
 <button type="button" class="btn btn-danger">Danger</button>
 
+<!-- Indicates love should be taken with kisses -->
+<button type="button" class="btn btn-warning">Love</button>
+
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
 <button type="button" class="btn btn-link">Link</button>
-
-
-
-
 </body>
 
 
