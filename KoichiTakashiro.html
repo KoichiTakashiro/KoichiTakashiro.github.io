@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--コメント-->
+    <meta charset="UTF-8">
+　　　<title>KoichiTakashiro.com</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <!--今からCSSy読み込みまーすとかjavascript読み込みまーすの宣言してるけど宣言方法は異なる-->
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+
+     <style>
+         h1 {color: orange;
+             margin: 1;}
+         #kon {color: red;}
+         .koko{font-size: 60px;
+                color: blue;}
+         h2 {font-size:50px;}
+         body {background-color:lightgray;}
+         strong{font-weight:1000;}
+
+     </style>
+     <script>
+     /* コメント */
+     //コメント　1行分だけ　CSS Javascript共通
+     window.onload = function() {
+        var x = 3 ;
+        var y = x * x ;
+        var z = y + 1 ;
+
+        var result = "好きな女性のタイプは " + z ;
+
+        alert(result) ;
+        
+        var s = document.getElementById("kon");
+
+        //alert(s);
+        s.innerHTML = "プログラミング難しい！";
+
+     };
+     var hako =function(x){
+            alert("愛情たっぷりの" + x)
+
+     } 
+    var kakikae =function(){
+            alert("*･゜ﾟ･*:.｡..｡.:*･'だめよ(*ﾟ▽ﾟ*)'･*:.｡. .｡.:*･゜ﾟ･\n" +
+             "*･゜ﾟ･*:.｡..｡.:*･'(*ﾟ▽ﾟ*)だめだめ'･*:.｡. .｡.:*･゜ﾟ･*")
+            $("#danger") . attr("class", "btn btn-warning");
+    };
+
+     </script>
+
+</head>
+
+<body>
+<h1>Hello World</h1>
+<h1 id="kon">konnichiwa!</h1>
+<h2 class="koko">fuck you!</h2>
+    <ul>
+      <li><strong>kome</strong></li>
+      <li>meko</li>
+    </ul>
+
+    <button onClick = 'hako("おじさん");'>着火</button>
+    <button onmouseover="kakikae();">絶対に押すな</button>←本当に押すなよ。絶対にだ。<br><br>
+
+    <!-- Standard button -->
+<button type="button" class="btn btn-default">Default</button>
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn btn-primary">Primary</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn-success">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn-info">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn-warning">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn-danger">Danger</button>
+
+<!-- Indicates love should be taken with kisses -->
+<button type="button" class="btn btn-warning">Love</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn btn-link">Link</button>
+</body>
+
+
+</html>
